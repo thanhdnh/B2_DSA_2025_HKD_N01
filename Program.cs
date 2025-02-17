@@ -33,6 +33,32 @@
             ar6.SetValue(i*i, i);
         foreach(int val in ar6)
             Console.WriteLine(val);
+        /* Bài tập với Array */
+        /*
+            (1) Sử dụng Collection.Array để tạo một mảng
+            số nguyên 10 phần tử với giá trị sinh
+            ngẫu nhiên. (2) Sau đó, chia đôi mảng thành
+            2 mảng có số phần tử bằng nhau và giữ 
+            nguyên chỉ số cho các phần tử của hai 
+            mảng. (3) Sau đó, cộng hai mảng lại với 
+            nhau theo đúng thứ tự.
+        */
+        //Hàm main
+        Array ar = Array.CreateInstance(typeof(int), 10);
+        createArray(ar);
+        foreach(int val in ar)
+            Console.WriteLine(val);
+    }
+    static void createArray(Array ar){
+        Random r = new Random();
+        for(int i=ar.GetLowerBound(0); 
+                i<=ar.GetUpperBound(0); i++)
+            ar.SetValue(r.Next(100), i);
+    }
+    static void splitArray(Array input, Array o1, Array o2){
 
+    }
+    static Array combineArrays(Array i1, Array i2){
+        return null;
     }
 }
