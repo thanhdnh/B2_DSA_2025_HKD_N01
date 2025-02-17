@@ -59,6 +59,10 @@
         System.Console.WriteLine("-----------");
         for(int i = o2.GetLowerBound(0); i<=o2.GetUpperBound(0); i++)
             Console.WriteLine($"o2[{i}] = {o2.GetValue(i)}");
+        System.Console.WriteLine("-----------");
+        Array result = combineArrays(o1, o2);
+        foreach(int val in result)
+            Console.WriteLine(val);
     }
     static void createArray(Array ar){
         Random r = new Random();
@@ -75,6 +79,12 @@
         }
     }
     static Array combineArrays(Array i1, Array i2){
-        return null;
+        Array result = Array.CreateInstance(typeof(int), i1.Length);
+        for(int i=i1.GetLowerBound(0); 
+                i<=i1.GetUpperBound(0); i++)
+            result.SetValue((int)i1.GetValue(i) + 
+                (int)i2.GetValue(i+i1.GetUpperBound(0)+1), 
+                i);
+        return result;
     }
 }
