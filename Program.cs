@@ -4,7 +4,7 @@
     {
         Console.Clear();
 
-        Array ar1 = 
+        /*Array ar1 = 
             Array.CreateInstance(typeof(float), 5);
             ar1.SetValue(3.14f, 0); //setter method
             float x = (float)ar1.GetValue(0);//getter method
@@ -33,6 +33,7 @@
             ar6.SetValue(i*i, i);
         foreach(int val in ar6)
             Console.WriteLine(val);
+        */
         /* Bài tập với Array */
         /*
             (1) Sử dụng Collection.Array để tạo một mảng
@@ -44,10 +45,20 @@
             nhau theo đúng thứ tự.
         */
         //Hàm main
-        Array ar = Array.CreateInstance(typeof(int), 10);
+        int len = 10;
+        Array ar = Array.CreateInstance(typeof(int), len);
         createArray(ar);
         foreach(int val in ar)
             Console.WriteLine(val);
+        System.Console.WriteLine("-----------");
+        Array o1 = Array.CreateInstance(typeof(int), len/2);
+        Array o2 = Array.CreateInstance(typeof(int), new int[1]{len/2}, new int[1]{len/2});
+        splitArray(ar, o1, o2);
+        for(int i = o1.GetLowerBound(0); i<=o1.GetUpperBound(0); i++)
+            Console.WriteLine($"o1[{i}] = {o1.GetValue(i)}");
+        System.Console.WriteLine("-----------");
+        for(int i = o2.GetLowerBound(0); i<=o2.GetUpperBound(0); i++)
+            Console.WriteLine($"o2[{i}] = {o2.GetValue(i)}");
     }
     static void createArray(Array ar){
         Random r = new Random();
@@ -56,7 +67,12 @@
             ar.SetValue(r.Next(100), i);
     }
     static void splitArray(Array input, Array o1, Array o2){
-
+        for (int i = o1.GetLowerBound(0); i<= o1.GetUpperBound(0);i++){
+            o1.SetValue(input.GetValue(i),i);
+        }
+        for (int i = o2.GetLowerBound(0); i<= o2.GetUpperBound(0);i++){
+            o2.SetValue(input.GetValue(i),i);
+        }
     }
     static Array combineArrays(Array i1, Array i2){
         return null;
