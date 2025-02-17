@@ -1,0 +1,14 @@
+/Users/hoangthanh/DSA-2025-HKD/N01/B2/bin/Debug/net8.0/B2
+/Users/hoangthanh/DSA-2025-HKD/N01/B2/bin/Debug/net8.0/B2.deps.json
+/Users/hoangthanh/DSA-2025-HKD/N01/B2/bin/Debug/net8.0/B2.runtimeconfig.json
+/Users/hoangthanh/DSA-2025-HKD/N01/B2/bin/Debug/net8.0/B2.dll
+/Users/hoangthanh/DSA-2025-HKD/N01/B2/bin/Debug/net8.0/B2.pdb
+/Users/hoangthanh/DSA-2025-HKD/N01/B2/obj/Debug/net8.0/B2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hoangthanh/DSA-2025-HKD/N01/B2/obj/Debug/net8.0/B2.AssemblyInfoInputs.cache
+/Users/hoangthanh/DSA-2025-HKD/N01/B2/obj/Debug/net8.0/B2.AssemblyInfo.cs
+/Users/hoangthanh/DSA-2025-HKD/N01/B2/obj/Debug/net8.0/B2.csproj.CoreCompileInputs.cache
+/Users/hoangthanh/DSA-2025-HKD/N01/B2/obj/Debug/net8.0/B2.dll
+/Users/hoangthanh/DSA-2025-HKD/N01/B2/obj/Debug/net8.0/refint/B2.dll
+/Users/hoangthanh/DSA-2025-HKD/N01/B2/obj/Debug/net8.0/B2.pdb
+/Users/hoangthanh/DSA-2025-HKD/N01/B2/obj/Debug/net8.0/B2.genruntimeconfig.cache
+/Users/hoangthanh/DSA-2025-HKD/N01/B2/obj/Debug/net8.0/ref/B2.dll
