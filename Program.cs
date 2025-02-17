@@ -87,4 +87,8 @@
                 i);
         return result;
     }
+    //Yêu cầu bổ sung: Chỉnh sửa các hàm yêu cầu để
+    //có thể hoạt động với mảng có số lẻ các phần tử.
+    //Với số lẻ các phần tử, khi chia đôi, thì bỏ đi
+    //phần tử ở giữa.
 }
